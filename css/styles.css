@@ -1,0 +1,211 @@
+.mainfont{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: comfortaa;
+    font-weight: 300;
+}
+body{
+    padding: 0;
+    margin: 0;
+    width:100%;
+    height:100%;
+    background-image: url("../img/thth.png");
+    background-size: 100%;
+    background-color: rgba(17,237,237,0.33);
+    background-repeat: no-repeat;
+}
+h1{
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
+    z-index: 1;
+    width: inherit;
+    height: 100px;
+    top:0px;
+    background-color:lightgreen;
+    justify-content: space-between;
+}
+.mainpage{
+    padding: 0px;
+    margin: 0px;
+    font-size:25px;
+    width: 157px;
+    height:28px;
+    background-color: transparent;
+}
+.sections{
+    padding: 0px;
+    margin: 0px;
+    font-size:25px;
+    width: 110px;
+    height:28px;
+    background-color: transparent;
+}
+.randompage{
+    padding: 0px;
+    margin: 0px; 
+    font-size:25px;
+    width: 142px;
+    height:56px;
+    background-color: transparent;
+}
+.sitename{
+    padding: 0px;
+    margin: 0px;
+    width: 394px;
+    height:90px;
+    font-size:40px;
+    background-color: transparent;
+}
+.reg{
+    padding: 0px;
+    margin: 0px; 
+    font-size:25px;
+    height:56px; 
+    width:234px;
+    background-color: transparent;
+    display: flex;
+}
+.welcoming{
+    padding: 0px;
+    margin: 0px; 
+    font-size:25px;
+    height:86px; 
+    width:234px;
+    background-color: transparent;
+    display: none;
+}
+h2{
+    padding: 0;
+    margin: 0;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top:100px;
+    bottom: 30px;
+    font-size:25px;
+    background-color:transparent;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    padding: 0;
+    margin: 0;
+    position:absolute;
+    z-index: 1;
+    bottom: 0px;
+    width:inherit;
+    height:30px;
+    background-color: lightgreen;
+}
+h4{
+    padding: 0;
+    margin: 0;
+    font-family: comfortaa;
+    font-weight: 300;
+    justify-content: center;
+    position: relative;
+    width:100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.50);
+    display:none;
+    align-items: center;
+    text-align: center;
+}
+.close1{
+    padding: 0px;
+    margin: 0px;
+    height: 30px;
+    width:30px;
+    position: relative;
+    top:-373px; left:467px;
+}
+.close2{
+    padding: 0px;
+    margin: 0px;
+    height: 30px;
+    width:30px;
+    position: relative;
+    top:-790px; left:467px;
+}
+.welcometext{
+    padding: 0;
+    margin: 0;
+    width:700px;
+    position: relative; 
+    bottom:100px;
+}
+.contacts{
+    font-size: 12px;
+    width:inherit;
+}
+.loginn{
+    padding: 0px;
+    margin: 0px;
+    height: 400px; width: 500px;
+    background-color: lightgreen;
+    font-size: 30px;
+    display:none;
+    z-index: 3;
+}
+
+.regist{
+    padding: 0px;
+    margin: 0px;
+    height: 82%; width: 500px;
+    background-color: lightgreen;
+    font-size: 30px;
+    display:none;
+    overflow-y: scroll;
+}
+.registname{
+    padding:0px;
+    margin:0px;
+    background-color:lightgreen;
+    position:sticky;
+    top:0px;
+    height:60px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.regbut{
+    background-color: rgb(71, 238, 71);
+    font-family: comfortaa;
+    font-weight:bold;
+    font-size: 20px;
+}
+input[type=text]{
+    padding: 0px;
+    margin: 0px;
+    width:75%;
+    height:30px;
+    font-family: comfortaa;
+}
+input[type=password]{
+    padding: 0px;
+    margin: 0px;
+    width:75%;
+    height:30px;
+    font-family: comfortaa;
+}
+select{
+    padding: 0px;
+    margin: 0px;
+    width:30%;
+    height:30px;
+    font-family: comfortaa;
+    text-align: center; 
+}
+input[type=checkbox]{
+    margin-right: 10px;
+}
+input:required:invalid 
+{
+      border:1px solid red;
+}
+.regist::-webkit-scrollbar{
+    display: none;
+}
