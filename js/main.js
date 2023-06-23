@@ -33,10 +33,10 @@ function entering(){
 function welcoming(){
     document.getElementById("reg").style.display="none";
     document.getElementById("welcoming").style.display="block";
-    document.getElementById("welcoming").innerHTML="<span>Здравствуйте, "+document.getElementById("username").value+"!</br></span><button class='regbut' onclick='notwelcoming()'>Выйти</button>";   
+    document.getElementById("welcoming").innerHTML="<span>Здравствуйте, "+document.getElementById("username").value+"!</br></span><button class='reg2but' onclick='notwelcoming()'>Выйти</button>";
 }
 function notwelcoming(){
     document.getElementById("welcoming").innerHTML="<span></span>";
     document.getElementById("welcoming").style.display="none";
-    document.getElementById("reg").style.display="block";
+    document.getElementById("reg").style.display="flex";
 }

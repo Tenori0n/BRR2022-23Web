@@ -177,6 +177,12 @@ h4{
     font-weight:bold;
     font-size: 20px;
 }
+.reg2but{
+    background-color: rgb(71, 238, 71);
+    font-family: comfortaa;
+    font-weight:bold;
+    font-size: 20px;
+}
 input[type=text]{
     padding: 0px;
     margin: 0px;
@@ -281,6 +287,9 @@ input:required:invalid
     .regbut{
         font-size: 15px;
     }
+    .reg2but{
+        font-size: 12px;
+    }
     .close1{
         height: 30px;
         width:30px;
@@ -304,5 +313,10 @@ input:required:invalid
     }
     .close2{
         top:-414px; left:375px;
+    }
+    .welcoming{
+        font-size:13px;
+        height:50px;
+        width:120px;
     }
 }
