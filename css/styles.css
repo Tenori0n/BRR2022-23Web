@@ -12,7 +12,7 @@ body{
     height:100%;
     background-image: url("../img/thth.png");
     background-size: 100%;
-    background-color: rgba(17,237,237,0.33);
+    background-color: rgba(74,123, 26,1);
     background-repeat: no-repeat;
 }
 h1{
@@ -24,7 +24,7 @@ h1{
     height: 100px;
     top:0px;
     background-color:lightgreen;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .mainpage{
     padding: 0px;
@@ -199,6 +199,9 @@ select{
     font-family: comfortaa;
     text-align: center; 
 }
+.confirm{
+    font-size:24px;
+}
 input[type=checkbox]{
     margin-right: 10px;
 }
@@ -208,4 +211,98 @@ input:required:invalid
 }
 .regist::-webkit-scrollbar{
     display: none;
+}
+@media only screen and (max-width: 700px) {
+    h1{
+        height:50px;
+    }
+    .sitename{
+        font-size:22px;
+        height:50px;
+        width:220px;
+    }
+    .mainpage{
+        font-size:15px;
+        height:50px;
+        width:100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sections{
+        font-size:15px;
+        height:50px;
+        width:80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .randompage{
+        font-size:15px;
+        height:50px;
+        width:100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .reg{
+        font-size:15px;
+        height:50px;
+        width:120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    h2{
+        top:50px;
+        font-size:16px;
+    }
+    .welcometext{
+        width:400px;
+        bottom:180px;
+    }
+    h4 img{
+        height:15px;
+        width:15px;
+    }
+    .loginn{
+        height: 250px; width: 300px;
+        font-size: 15px;
+    }
+    input[type=text]{
+        height:25px;
+        font-size:12px;
+    }
+    input[type=password] {
+        height: 25px;
+        font-size:12px;
+    }
+    .regbut{
+        font-size: 15px;
+    }
+    .close1{
+        height: 30px;
+        width:30px;
+        top:-237px; left:275px;
+    }
+    .regist{
+        width:400px;
+        height:75%;
+        font-size:18px;
+    }
+    .registname{
+        height:20px;
+
+    }
+    .regist p{
+        padding:7px;
+        margin:0;
+    }
+    .confirm{
+        font-size:20px;
+    }
+    .close2{
+        top:-414px; left:375px;
+    }
 }

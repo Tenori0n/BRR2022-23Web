@@ -11,9 +11,9 @@
 </head>
 <body>
     <?php
-    echo(file_get_contents("http://f92278pk.beget.tech/header.html"));
-    echo(file_get_contents("http://f92278pk.beget.tech/body.html"));
-    echo(file_get_contents("http://f92278pk.beget.tech/footer.html"));
+    echo(file_get_contents("C:\OpenServer\domains\project\header.html"));
+    echo(file_get_contents("C:\OpenServer\domains\project\body.html"));
+    echo(file_get_contents("C:\OpenServer\domains\project\footer.html"));
     ?>
 </body>
 </html>
