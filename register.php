@@ -10,7 +10,11 @@ require('dbconnect.php');
     $filename=$nuid.$newname;
     $filenamee=$dir.$filename;
     $filename=$filenamee.'.png';
-    move_uploaded_file($_FILES['avatar']['tmp_name'],$filename);
+    $default='img/default.png';
+    if(file_exists($_FILES['avatar']['tmp_name']))
+        move_uploaded_file($_FILES['avatar']['tmp_name'],$filename);
+    else
+        copy($default,$filename);
     if ((strcmp($gender, 'мужской'))==0)
     {
         $query = "INSERT INTO \"ForestSiteBD\".\"Users\" VALUES ((SELECT MAX (\"ForestSiteBD\".\"Users\".\"User_ID\")+1 FROM \"ForestSiteBD\".\"Users\"), '$newname', '$filename', 'Male', '$newpassword')";
