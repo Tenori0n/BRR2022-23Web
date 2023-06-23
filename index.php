@@ -11,9 +11,9 @@
 </head>
 <body>
     <?php
-    echo(file_get_contents("C:\OpenServer\domains\project\header.html"));
-    echo(file_get_contents("C:\OpenServer\domains\project\body.html"));
-    echo(file_get_contents("C:\OpenServer\domains\project\footer.html"));
+    echo(file_get_contents("http://project/header.html"));
+    echo(file_get_contents("http://project/body.html"));
+    echo(file_get_contents("http://project/footer.html"));
     ?>
 </body>
 </html>

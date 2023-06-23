@@ -43,7 +43,7 @@
                 echo "<img src=".$_FILES['avatar']['name']." height='200px' width='200px'>";
         ?>
         </br>
-        <button class="regbut" type="button" onclick="location.href='http://f92278pk.beget.tech'">Вернуться в начало</button>
+        <button class="regbut" type="button" onclick="location.href='http://project/index.php'">Вернуться в начало</button>
     </div>
 </body>
 </html>
