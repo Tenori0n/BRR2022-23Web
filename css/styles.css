@@ -74,7 +74,7 @@ h1{
     height:86px; 
     width:234px;
     background-color: transparent;
-    display: none;
+    display: block;
 }
 h2{
     padding: 0;

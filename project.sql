@@ -5,7 +5,7 @@
 -- Dumped from database version 15.1
 -- Dumped by pg_dump version 15.1
 
--- Started on 2023-06-23 06:01:52
+-- Started on 2023-06-23 11:36:23
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -354,7 +354,7 @@ COMMENT ON COLUMN "ForestSiteBD"."Posts"."Picture_5_ID" IS 'ID 5-ой карти
 CREATE TABLE "ForestSiteBD"."Users" (
     "User_ID" bigint NOT NULL,
     "Username" character varying NOT NULL,
-    "Avatar" character varying NOT NULL,
+    "Avatar" character varying,
     "Sex" character varying NOT NULL,
     "Password" character varying NOT NULL
 );
@@ -464,6 +464,7 @@ COPY "ForestSiteBD"."Posts" ("Post_ID", "Owner_ID", "Post_text", "Picture_1_ID",
 --
 
 COPY "ForestSiteBD"."Users" ("User_ID", "Username", "Avatar", "Sex", "Password") FROM stdin;
+1	Userok1111	\N	Male	goaway1
 \.
 
 
@@ -674,7 +675,7 @@ ALTER TABLE ONLY "ForestSiteBD"."Likes_Posts"
     ADD CONSTRAINT "Post" FOREIGN KEY ("Post_ID") REFERENCES "ForestSiteBD"."Posts"("Post_ID") NOT VALID;
 
 
--- Completed on 2023-06-23 06:01:52
+-- Completed on 2023-06-23 11:36:27
 
 --
 -- PostgreSQL database dump complete
