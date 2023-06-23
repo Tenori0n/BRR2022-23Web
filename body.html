@@ -3,7 +3,7 @@
       <form action="login.php" method="post">
       <p>Вход</p>
       <p>Имя пользователя</p>
-      <input name="username" id="username" type="text" pattern="[A-Za-z]{6,}[0-9]{4,4}" required placeholder="Введите имя пользователя">
+      <input name="username" id="username" type="text" pattern="[A-Za-z]{6,}[0-9]{1,}" required placeholder="Введите имя пользователя">
       <p>Пароль</p>
       <input name="userpassword" id="userpassword" type="password" pattern="[A-Za-z]{6,}[0-9]{1,}" required placeholder="Введите пароль"><br><br>
       <input type="submit" id="loginbut" class="regbut" onclick="hidereg()" value="Войти"></input>
@@ -15,20 +15,20 @@
       </form>
     </div>
     <div class="regist" id="regist">
-    <form action="http://project/reg.php" method="POST" enctype="multipart/form-data">
+    <form action="register.php" method="POST" enctype="multipart/form-data">
       <p class="registname">Регистрация</p>
       <p>Имя пользователя</p>
-      <input name="login" type="text" pattern="[A-Za-z]{6,}[0-9]{1,}" required placeholder="Минимум 6 латинских символов и 1 цифра">
+      <input id="username1" name="login" type="text" pattern="[A-Za-z]{6,}[0-9]{1,}" required placeholder="Минимум 6 латинских символов и 1 цифра">
       <p>Аватар</p>
       <input name="avatar" type="file">
       <p>Пол</p>
-      <select name="gender"><option>мужской</option><option>женский</option></select>
+      <select name="gender"><option value="1">мужской</option><option value="2">женский</option></select>
       <p>Пароль</p>
-      <input name="password" type="password" pattern="[A-Za-z]{6,}[0-9]{1,}" required placeholder="Минимум 6 латинских свимволов и 1 цифра">
+      <input id="userpassword1" name="password" type="password" pattern="[A-Za-z]{6,}[0-9]{1,}" required placeholder="Минимум 6 латинских свимволов и 1 цифра">
       <p>Подтверждение пароля</p>
-      <input name="passwordcheck" type="password" pattern="[A-Za-z]{6,}[0-9]{1,}" required placeholder="Повторите пароль"><br><br>
+      <input id="userpassword2" name="passwordcheck" type="password" pattern="[A-Za-z]{6,}[0-9]{1,}" required placeholder="Повторите пароль"><br><br>
       <input name="rules" type="checkbox" required><span class="confirm">Я принимаю правила сайта</span><br><br>
-      <input class="regbut" type="submit">
+      <input class="regbut" id="regbutt" type="submit">
       <input class="regbut" type="reset">
       <div class="close2" onclick="hidereg()">
         <img src="img/cross.png" height="30px" width="30px">

@@ -30,6 +30,18 @@ function entering(){
         else
             btn.disabled = true;})
 }
+function registering(){
+    var btn = document.getElementById("regbutt");
+    var username = document.getElementById("username1");
+    var userpassword1 = document.getElementById("userpassword1");
+    var userpassword2 = document.getElementById("userpassword2");
+    btn.disabled = true;
+    document.getElementById("h4").addEventListener('input', function (event){
+        if (username.validity.valid == true && userpassword1.validity.valid == true && userpassword2.validity.valid == true && (userpassword1.value ==userpassword2.value))
+            btn.disabled = false;
+        else
+            btn.disabled = true;})
+}
 function welcoming()
 {
     document.getElementById("reg").style.display="none";
